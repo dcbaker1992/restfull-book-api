@@ -1,0 +1,27 @@
+<h1>Displaying {{books.length}} books</h1>
+<div class="main-content">
+    <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let book of books">
+            {{ book.title }} | <a class="action-link" [routerLink]="['view', book.id]">View</a> | <a class="action-link" [routerLink]="['edit', book.id]">Edit</a> |  <a class="action-link" [routerLink]="['delete', book.id]">Delete</a> 
+        </mat-list-item>
+    </mat-list>
+</div>
+
+
+
+
+
+
+
+<!-- <ul class="bookList" *ngFor="let book of books">
+    <li>
+        <p>Title: {{book.title}}</p>
+        <p>Subtitle: {{book.subtitle}}</p>
+        <p>Author: {{book.author}}</p>
+        <p>Published: {{book.published}}</p>
+        <p>Publisher: {{book.publisher}}</p>
+        <p>Pages: {{book.pages}}</p>
+        <p>Description: {{book.description}}</p>
+        <!-- <button class="delete-button">Delete</button>   -->
+    <!-- </li> -->
+<!-- </ul> -->  

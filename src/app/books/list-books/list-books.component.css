@@ -1,0 +1,9 @@
+.bookList{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
+
+.action-link{
+    padding: 10px;
+}
