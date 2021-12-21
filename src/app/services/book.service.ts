@@ -18,4 +18,7 @@ export class BookService {
   createBook(Object: any){
     return this.http.post("http://localhost:8082/api/books", Object);
   }
+  deleteBook(id: any){
+    return this.http.delete("http://localhost:8082/api/books/"+ id)
+  }
 }
